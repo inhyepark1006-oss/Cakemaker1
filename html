@@ -1,0 +1,51 @@
+<h1>🎄 크리스마스 케이크 미션 게임 🎂</h1>
+
+<h2 id="stageText">현재 스테이지: 1</h2>
+
+<h3>🎯 미션 케이크</h3>
+<canvas id="missionCanvas" width="300" height="300"></canvas>
+
+<h3>🎂 내가 만드는 케이크</h3>
+<div class="controls">
+  <label>층 수
+    <input type="range" id="layerCount" min="1" max="5" value="3">
+  </label>
+
+  <label>케이크 맛
+    <select id="flavorSelect">
+      <option value="chocolate">초코</option>
+      <option value="strawberry">딸기</option>
+      <option value="vanilla">바닐라</option>
+      <option value="matcha">말차</option>
+      <option value="cheese">치즈</option>
+    </select>
+  </label>
+
+  <label>프로스팅 색
+    <select id="frostColor">
+      <option value="#EDEDED">EDEDED</option>
+      <option value="#C3D5B3">C3D5B3</option>
+      <option value="#FCF0A5">FCF0A5</option>
+      <option value="#7E2F2F">7E2F2F</option>
+      <option value="#E8BBE0">E8BBE0</option>
+      <option value="#EBA2A9">EBA2A9</option>
+      <option value="#C2B3CD">C2B3CD</option>
+    </select>
+  </label>
+
+  <label>토핑 추가
+    <select id="toppingSelect">
+      <option value="star">⭐ 별</option>
+      <option value="tree">🎄 트리</option>
+      <option value="candy">🍬 캔디</option>
+      <option value="berry">🍓 베리</option>
+      <option value="snow">❄ 눈송이</option>
+    </select>
+    <button id="addTopping">추가</button>
+  </label>
+</div>
+
+<canvas id="playerCanvas" width="300" height="300"></canvas>
+
+<button id="submitBtn">정답 제출</button>
+<h3 id="scoreText"></h3>
